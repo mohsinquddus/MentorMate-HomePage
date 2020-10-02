@@ -1,0 +1,218 @@
+@import "navbar.scss";
+@import "mediaQueries.scss";
+@import "main-page.scss";
+@import "second-page.scss";
+@import "card-1.scss";
+@import "card-2.scss";
+@import "card-3.scss";
+@import "card-4.scss";
+@import "third-page.scss";
+@import "fourth-page.scss";
+@import "fifth-page.scss";
+@import "sixth-page.scss";
+@import "Affilation-page.scss";
+@import "footer.scss";
+
+html{
+    font-size: 62.5%;
+    @media screen and(max-width:1210px) {
+        font-size: 52.2%;
+        .Affilation-page{
+            grid-template-columns: repeat(3,1fr);
+            justify-content: center;
+        }
+    }
+    @media screen and(max-width:1024px) {
+        font-size: 50%;
+        .Affilation-page{
+            width: 100%;
+            grid-template-columns: repeat(2,1fr);
+            justify-items: center;
+        }
+        .first-3{
+            font-size: 2rem;
+        }
+        .second-3{
+            font-size: 5rem;
+        }
+        .third-3{
+            font-size: 2.7rem;
+        }
+        .healthcare-text-list li, .eaducation-text-list li, .lifestyle-text-list li{
+            font-size: 2rem;
+        }
+    }
+    @media screen and(max-width:895px) {
+        font-size: 40%;
+        .Affilation-page{
+            display: none;
+        }
+    }
+    @media screen and(max-width:810px) {
+        font-size: 35%;
+    }
+    @media screen and(max-width:715px) {
+        font-size: 30%;
+    }
+    @media screen and(max-width:630px) {
+        font-size: 35%;
+        .list{
+            display: none;
+        }
+        .hamburger{
+            visibility: visible;
+            cursor: pointer;
+        }
+        .icon{
+            visibility: visible;
+        }
+        .background{
+            visibility: visible;
+        }
+        .main-page-image{
+            margin-top: 0;
+
+        }
+        .block-1 ,.block-2, .block-3, .block-4, .block-5, .block-6, .block-7, .block-8, .block-9 ,.block-10, .block-11, .block-12{
+            display: none;
+        }
+        .block-13{
+            grid-column: 2/12;
+            grid-row: 2/7;
+        }
+        .second-pg-bg{
+            width: 100%;
+            border-top-right-radius: 0rem;
+            margin-top: -40rem;
+            height: 250rem;
+        }
+        .text-2{
+            width: 100%;
+            justify-items: center;
+            // padding-left: 8rem;
+        }
+        .first-2{
+            padding-left: 8rem;
+        }
+        .second-2{
+            padding-left: 8rem;
+
+        }
+        .third-2{
+            padding-left: 8rem;
+
+        }
+        .blocks{
+            grid-template-columns: 55rem;
+            grid-template-rows: repeat(4,48rem);
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 0;
+        }
+        .card-2{
+            grid-column: 1/2;
+            grid-row: 2;
+            // width: ;
+        }
+        .card-3{
+            grid-column: 1/2;
+            grid-row: 3;
+        }
+        .card-4{
+            grid-column: 1/2;
+            grid-row: 4;
+            margin-top: auto;
+        }
+        .third-pg-bg-div{
+            // grid-template-columns: 1fr;
+            margin-top: auto;
+            
+        }
+        .third-pg-text{
+            grid-column: 1/-1;
+            grid-row: 1;
+        }
+        .gallery{
+            grid-column: 1/-1;
+            border-top-left-radius: 0rem;
+            width: 100%;
+ 
+        }
+        .backgroung{
+            width: 100%;
+            justify-content: center;
+            justify-items: center;
+        }
+        [class^="row-"]{
+            margin: auto;
+            padding: 0rem 1.5rem 0rem 1.5rem;
+            // margin:0rem 30rem 0rem 30rem;
+        }
+        .center-text-1{
+            margin-top: 70rem;
+        }
+        .three-1{
+            padding: 2rem;
+        }
+        .third-3{
+            padding-right: 1rem;
+        }
+        // --------------
+        .eaducation-text{
+            grid-column: 1/-1;
+            grid-row: 1;
+            padding-right: 1rem;
+         
+        }
+        .video-1{
+            grid-column: 1/3;
+            grid-row: 2;
+        }
+        // --------------
+        .healthcare-text{
+            grid-column: 1/-1;
+            grid-row: 1;
+            padding-right: 1rem;
+
+        }
+        .video-2{
+            grid-column: 1/3;
+            grid-row: 2;
+                 }
+        .video-2 > video{
+            width: 120%;
+        }
+        // --------------
+        .lifestyle-text{
+            grid-column: 1/-1;
+            grid-row: 1;
+            padding-right: 1rem;
+        }
+        .video-3{
+            grid-column: 1/3;
+            grid-row: 2;
+        }
+        // ---------------------------------------
+        video{
+            display: none;
+        }
+        .country{
+            font-size: 0.5rem;
+        }
+        .Region{
+            padding: 1rem;
+        }
+        .butn{
+            font-size: 1.5rem;
+        }
+        .column-8{
+            justify-items: center;
+        }
+
+
+    }
+}
+body{
+    margin: 0;
+}

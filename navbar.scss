@@ -1,0 +1,240 @@
+nav {
+    display: flex;
+    box-sizing: border-box;
+    border-bottom: 1px solid #d2d2d2;
+    justify-content: space-around;
+    position: fixed;
+    z-index: 5000;
+    background-color: white;
+    width: 100%;
+    top: 0;
+    opacity: .9;
+}
+.container{
+    width: 90vw;
+    height: 8rem;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-gap: 1em;
+}
+.text{
+    padding: 1rem;
+    text-align: center;
+    display: inline-block;
+    box-sizing: border-box;
+    grid-column: 1/3;
+    margin: auto;
+}
+// .list a:hover{
+//     letter-spacing: 1rem;
+//     transition: letter-spacing .5s;
+// }
+.expand:hover{
+    letter-spacing: 1rem;
+    transition: letter-spacing .5s;
+}
+.text p{
+    font-size: 2.5rem;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    color: #131313;
+}
+.text p:hover{
+    cursor: pointer;
+}
+.list{
+    grid-column: 4/13;
+    margin: auto;
+    margin-right: 0;
+}
+.list ul{
+    font-size: 1.3rem;
+    list-style: none;
+    box-sizing: border-box;
+    margin: auto;
+}
+.list ul li {
+    display: inline-block;
+    padding: .5rem;
+    text-transform: uppercase;
+}
+.list a{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: #131313;
+    letter-spacing: .1rem;
+    font-weight: 500;
+}
+.text p:hover , .list a:hover , ._link:hover {
+    color: #03a8f5;
+    transition: color .3s;
+}
+
+// -------------------------------
+.dropbtn {
+    background-color: white;
+    color: black;
+    padding: 1rem;
+    font-size: 1rem;
+    border: none;
+}
+
+.dropdown {
+position: relative;
+display: inline-block;
+}
+.dropbtn img{
+    width: 4rem;
+}
+.dropdown-content img{
+    width: 4rem;
+}
+
+.dropdown-content {
+background: white;
+display: none;
+position: absolute;
+min-width: 20rem;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+
+.dropdown-content a {
+color: #878787;
+padding: 1rem 2rem;
+text-decoration: none;
+display: block;
+align-items: center;
+
+}
+.dropdown-content p {
+    color: black;
+    padding: .9rem 1rem;
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid dimgray;
+    }
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;transition: display 1s;}
+
+.dropdown:hover .dropbtn {cursor: pointer;}
+
+.btn{
+    display: inline-block;
+    margin: auto;
+}
+.btn button{
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: whitesmoke;
+    width: 9em;
+    height: 3em;
+    border-radius: 2px;
+    border: none;
+}
+.btn button:hover{
+    cursor: pointer;
+    background-color: white;
+    transition: background-color .5s, color .6s;
+    color: #131313;
+    border: 2px solid dimgray;
+    border-radius: 5px;
+    box-shadow: 0 1rem 3rem rgba($color: #000000, $alpha: .1);
+    letter-spacing: .2rem;
+    transition: letter-spacing .5s;
+}
+// --------------------------------------------------------------
+.check{
+    display: none;
+}
+.icon{
+    position: fixed;
+    right: 4rem;
+    top:3.5rem;
+    z-index: 5000;
+    cursor: pointer;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+.icon, .icon::before , .icon::after{
+    width: 4rem;
+    height: .4rem;
+    background-color: black;
+    display: inline-block;
+}
+.icon::before , .icon::after{
+    content: "";
+    position: absolute;
+    left: 0;
+}
+.icon::before{
+    top: -0.7rem;
+}
+.icon::after{
+    top: 0.8rem;
+}
+
+.background{
+    // background-color: yellowgreen ;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    align-content: center;
+    justify-content: center;
+    visibility: hidden;
+    background-color: white;
+    z-index: 1000;
+    top: 0;
+}
+.check:checked ~ .background{
+    display: none;
+    opacity: 0;
+} 
+.hamburger-list{
+    list-style: none;
+    justify-content: center;text-align: center;
+    // transform: translate(-2%,30rem);
+    margin: auto;
+    margin-top: 20rem;
+    padding: 1rem;
+}
+._item{
+    padding: 2rem;
+    line-height: 9rem;
+}
+._link{
+    text-decoration: none;
+    font-size: 5rem;
+    text-transform: uppercase;
+    color: #a6a6a6;
+    padding: 1rem;
+}
+._link:hover{
+    letter-spacing: 1.5rem;
+    transition: letter-spacing .5s;
+}
+.hamburger-button{
+    text-transform: uppercase;
+    font-size: 3rem;
+    background-color: black;
+    color: white;
+    width: 9em;
+    height: 3em;
+    border-radius: 2px;
+    border: none;
+    cursor: pointer;
+}
+.hamburger-button:hover{
+    border: 1px solid black;
+    border-radius: .6rem;
+    background-color:white;
+    color: black;
+    letter-spacing: .5rem;
+    transition: background-color .5s, color .6s, letter-spacing .5s;
+}

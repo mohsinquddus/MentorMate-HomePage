@@ -1,0 +1,17 @@
+{
+  "name": "mentormate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "node-sass SASS/main.scss CSS/index.css -w"
+  },
+  "author": "Mohsin Quddus",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  },
+  "dependencies": {
+    "aos": "^2.3.4"
+  }
+}
