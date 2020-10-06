@@ -12,14 +12,21 @@
 @import "sixth-page.scss";
 @import "Affilation-page.scss";
 @import "footer.scss";
+@import "footer-2.scss";
 
 html{
     font-size: 62.5%;
+    .footer-2{
+        display: none;
+    }
     @media screen and(max-width:1210px) {
         font-size: 52.2%;
         .Affilation-page{
             grid-template-columns: repeat(3,1fr);
             justify-content: center;
+        }
+        .footer-2{
+            display: none;
         }
     }
     @media screen and(max-width:1024px) {
@@ -41,18 +48,30 @@ html{
         .healthcare-text-list li, .eaducation-text-list li, .lifestyle-text-list li{
             font-size: 2rem;
         }
+        .footer-2{
+            display: none;
+        }
     }
     @media screen and(max-width:895px) {
         font-size: 40%;
         .Affilation-page{
             display: none;
         }
+        .footer-2{
+            display: none;
+        }
     }
     @media screen and(max-width:810px) {
         font-size: 35%;
+        .footer-2{
+            display: none;
+        }
     }
     @media screen and(max-width:715px) {
         font-size: 30%;
+        .footer-2{
+            display: none;
+        }
     }
     @media screen and(max-width:630px) {
         font-size: 35%;
@@ -208,6 +227,12 @@ html{
         }
         .column-8{
             justify-items: center;
+        }
+        .footer-1{
+            display: none;
+        }
+        .footer-2{
+            display: block;
         }
 
 

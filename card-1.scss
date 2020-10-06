@@ -19,7 +19,6 @@
     padding: 1rem;
     margin-left: 15rem;
     font-size: 4rem;
-    // width: 1rem;
 }
 .card-text-1 h2{
     color: #fff;
@@ -79,7 +78,6 @@
     grid-column: 2/5;
     grid-row: 2;
     background-color: #4ddbac;
-    // width: 9rem;
     border-radius: 100px;
 }
 .circle-17{
@@ -94,8 +92,18 @@
 .circle-18{
     grid-column: 2/4;
     grid-row: 2;
-    border-radius: 100px;
+    border-radius: 10rem;
     z-index: 2;
+    background-image: url("/img/card-1-part2.jpg");
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.circle-18-o{
+    grid-column: 3/5;
+    grid-row: 2;
+    border-radius: 10rem;
+    z-index: -1;
     background-image: url("/img/card-1-part2.jpg");
     background-position: top;
     background-size: cover;
@@ -104,21 +112,18 @@
 .circle-12{
     grid-column: 2/4;
     grid-row: 1;
-    border-radius: 10%;
     border-radius: 100px;
     margin-left: .5erm;
     background-image: url("/img/card-1-part1.jpg");
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
-    // animation: left-right .5s linear infinite;
-    // animation-play-state: paused; 
-    // transition: grid-column;
 }
 .circle-12-o{
     grid-column: 1/3;
     grid-row: 1;
     z-index:-1;
+    opacity: 0;
     border-radius: 10%;
     border-radius: 100px;
     margin-left: .5erm;
@@ -129,6 +134,7 @@
 }
 .card-1:hover{
     background: #fff;
+    transition: background-color .3s;
     .card-text-1 h2{
       color: black;
     }
@@ -138,33 +144,30 @@
     [class^="circle-"]{
         background-color:#29d29a;
     }
-    .circle-12-o{
-        // animation-play-state: running;
-        z-index: 2;
-        grid-column: 2/4;
-        transition: grid-column 3s;
-        
-    }
-    // .circle-12{
-    //     grid-column: 2/4;
-    //     opacity: 1;
-    //     transition: opacity .1s;
-    //     transition: grid-column 1s;
-    // }
     .circle-16{
-        grid-column: 2/-1;
-        grid-row: 2; 
+        margin-right: -9rem;
         background-color: #4ddbac;
-        transition: grid-column 3s;
-        transition: background-color 4s;
+        transition-property: margin-right;
+        transition-duration: .5s;
+        transition-timing-function: ease-in-out;
+    }
+    .circle-12-o{
+        opacity: 1;
+        z-index: 2;
+        margin-right: -10rem;
+        margin-left: 10rem;
+        transition-property: margin-right,margin-left,opacity;
+        transition-duration: .5s;
+    }
+    .circle-18-o{
+        opacity: 1;
+        z-index: 2;
+        margin-right: 10rem;
+        margin-left: -10rem;
+        transition-property: margin-right,margin-left,opacity;
+        transition-duration: .5s;
     }
 
 }
 
-
-// @keyframes left-right{
-//     0%{grid-column: 1/3;}
-//     100%{grid-column: 2/4;}
-
-// }
 

@@ -139,6 +139,7 @@
 }
 .card-4:hover{
     background: #fff;
+    transition: background-color .3s;
     .card-text-4 h2{
       color: black;
     }

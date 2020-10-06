@@ -56,7 +56,6 @@
 .circle-22{
     grid-column: 2/3;
     grid-row: 1;
-    // background-color: #ffa933;
     background-image: url("/img/card-21.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -157,6 +156,7 @@
 
 .card-2:hover{
     background: #fff;
+    transition: background-color .3s;
     .card-text-2 h2{
       color: black;
     }

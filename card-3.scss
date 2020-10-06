@@ -56,15 +56,38 @@
 .circle-32{
     grid-column: 2/3;
     grid-row: 1/3;
-    background-color: #61cbfd;
+    // background-color: #61cbfd;
     border-radius: 10rem;
+    background-image: url("/img/card-31.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;;
 }
+.circle-32-o{
+    grid-column: 2/3;
+    grid-row: 1/3;
+    border-radius: 10rem;
+    background-color: #61cbfd;
+    opacity: .8;
+}
+
 .circle-33{
     grid-column: 3/4;
     grid-row: 1/3;
-    background-color: #61cbfd;
+    // background-color: #61cbfd;
+    border-radius: 10rem;
+    background-image: url("/img/card-32.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;;
+}
+.circle-33-o{
+    grid-column: 3/4;
+    grid-row: 1/3;
     border-radius: 10rem;
 
+    background-color: #61cbfd;
+    opacity: .8;
 }
 .circle-34{
     grid-column: 4/5;
@@ -92,7 +115,17 @@
     grid-row: 2/3;
     background-color: #2fbbfc;
     border-radius: 10rem;
-
+    background-image: url("/img/card-33.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.circle-37-o{
+    grid-column: 4/5;
+    grid-row: 2/3;
+    border-radius: 10rem;
+    background-color: #61cbfd;
+    opacity: .8;
 }
 .circle-38{
     grid-column: 5/6;
@@ -101,32 +134,50 @@
     border-radius: 10rem;
 
 }
-
 .card-3:hover{
     background: #fff;
+    transition: background-color .3s;
     .card-text-3 h2{
       color: black;
     }
     .card-text-3 p{
       color: black;
     }
-    // [class^="circle-3"]{
-    //     background-color:#03a8f5;
-    // }
     .circle-36{
-        grid-row: 1/2;
-        transition: opacity 2s;
-       
+        margin-top: -10rem;
+        margin-bottom: 10rem;
+        transition-property :margin-top ,margin-bottom;
+        transition-duration:.5s;
+        transition-timing-function:ease-in-out;
     }
     .circle-38{
-        grid-row: 2/3;
-        transition-property: grid-row;
-        transition-delay: 1s;
-        transition-duration: 1s;
-        transition-timing-function: ease-out;
-
+        margin-top: 10rem;
+        margin-bottom: -10rem;
+        transition-property :margin-top ,margin-bottom;
+        transition-duration:.5s;
+        transition-timing-function:ease-in-out;
+        transition-delay:.5s;
+    }
+    .circle-32-o{
+        opacity: 0;
+        transition-property: opacity;
+        transition-duration: .5s;
+        // transition-delay: 1s;
+    }
+    .circle-33-o{
+        opacity: 0;
+        transition-property: opacity;
+        transition-duration: .5s;
+        // transition-delay: .5s;
+    }
+    .circle-37-o{
+        opacity: 0;
+        transition-property: opacity;
+        transition-duration: .5s;
+        // transition-delay: .5s;
     }
 }
+
 @keyframes down-up{
     from{grid-column: 1/3;opacity: 1;}
     to{grid-column: 2/4;opacity: 1;}
